@@ -1,0 +1,27 @@
+name: Bug
+description: Something in KanLab doesn't work the way it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Issues here are public. Do not include any personal information.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: What were you trying to do and what did you experience? (crash, unexpected result, something else?)
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: KanLab version
+      description: Settings > About shows it.
+      placeholder: "1.9.2"
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and Android version
+      placeholder: Pixel 8, Android 15
